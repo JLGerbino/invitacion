@@ -1,0 +1,246 @@
+/* =====================
+   Estilo Global
+===================== */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #000;   /* Fondo negro */
+  color: #d4af37;           /* Dorado */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #d4af37;
+  margin: 10px 0;
+}
+
+button {
+  background: #d4af37;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #ffd700;
+  transform: scale(1.05);
+}
+
+/* =====================
+   Encabezado con imagen
+===================== */
+header img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 3px solid #d4af37;
+}
+
+/* =====================
+   Carrusel
+===================== */
+.carousel {
+  position: relative;
+  max-width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+  opacity: 1;
+}
+
+/* =====================
+   Cuenta regresiva
+===================== */
+#timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-weight: bold;
+  margin: 40px 0;
+}
+
+.time-box {
+  text-align: center;
+  background: #111; /* Negro más claro */
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(212,175,55,0.5);
+  min-width: 80px;
+  animation: fadeInUp 1s ease;
+}
+
+.time-box span {
+  display: block;
+  font-size: 2em;
+  color: #d4af37;
+  transition: transform 0.5s;
+}
+
+.time-box small {
+  font-size: 0.8em;
+  color: #bbb;
+}
+
+/* Flip animación */
+.flip {
+  display: inline-block;
+  animation: none;
+}
+
+.flip.animate {
+  animation: flipAnim 0.5s ease;
+}
+
+@keyframes flipAnim {
+  0% { transform: rotateX(0deg); }
+  50% { transform: rotateX(90deg); }
+  100% { transform: rotateX(0deg); }
+}
+
+/* =====================
+   Bloques de Evento
+===================== */
+.evento-box {
+  background: #111;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(212,175,55,0.4);
+  animation: fadeIn 1s ease;
+}
+
+.evento-box h3 {
+  margin-bottom: 10px;
+}
+
+.evento-box p {
+  color: #ccc;
+}
+
+/* =====================
+   Diálogos
+===================== */
+dialog {
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 500px;
+  background: #111;
+  color: #d4af37;
+  box-shadow: 0 8px 20px rgba(212,175,55,0.5);
+}
+
+dialog::backdrop {
+  background: rgba(0,0,0,0.8);
+}
+
+/* =====================
+   Animaciones Globales
+===================== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/*boton musica*/
+#musicToggle {   
+  position: fixed;
+  bottom: 20px;    /* 🔥 lo mandamos abajo */
+  right: 20px;     /* 🔥 esquina derecha */
+  background: #ffd700;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 50%;
+  font-size: 1.2em;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background 0.2s;
+  z-index: 1000;   /* siempre arriba */
+}
+
+#musicToggle:hover {
+  background: #ffd700;
+  transform: scale(1.1);
+}
+
+/* =====================
+   Formulario de consultas
+===================== */
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #111; /* igual que los boxes del evento */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(212,175,55,0.4);
+  text-align: left;
+  animation: fadeInUp 1s ease;
+}
+
+form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d4af37; /* dorado */
+}
+
+form label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+  background: #000; /* mantiene el negro */
+  color: #d4af37;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #ffd700;
+  outline: none;
+  box-shadow: 0 0 6px rgba(212,175,55,0.6);
+}
+
+form button {
+  margin-top: 20px;
+  width: 100%;
+}
