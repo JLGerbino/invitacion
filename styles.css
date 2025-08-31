@@ -13,7 +13,9 @@ h2, h3, p{
   font-family: "Caveat", cursive;/*'Great Vibes', cursive;*/
   color:skyblue;/*#ee4848;*//*white;*/
 }
-
+.abajo{
+  background-color: white;
+}
 .textoDialogo{
   font-family: "Ubuntu Mono", monospace;
   color:skyblue;/*#ee4848;*//*white;*/

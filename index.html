@@ -16,14 +16,15 @@
     <audio id="bgMusic" src="musica/Los Autenticos Decadentes - Pendeviejo (video oficial) [HD].mp3" loop></audio>
 
     <!-- Encabezado -->
-    <header class="header">
-  <img src="fotos/Diego y Mariano (2).png" alt="Encabezado cumpleaños" class="header-img" />
-</header>  
-<div class="abajo">
+  <header class="header">
+    <img src="fotos/Diego y Mariano (2).png" alt="Encabezado cumpleaños" class="header-img" />
+  </header>
+  <div class="abajo">
     <div class="icon info" id="iconInfo">
-    <img src= "fotos/icons8-abajo.gif" alt="Ubicación" class="icono-info">
-  </div> </div>
-    
+      <img src="fotos/abajo.gif" alt="Ubicación" class="icono-info">
+    </div>
+  </div>
+   
     <section class="countdown">
   <h2 class="faltan">🎂 Faltan 🎂</h2>
   <div id="timer">
@@ -44,19 +45,10 @@
         <img src="fotos/foto4.jpg" alt="Foto 4">
     </div>
 
-    <section class="evento">
-
-  <!--Bloque de Dress -->  
-   <div class="evento-box">
-    <div class="icon agendar" id="iconAgendar">
-    <img src="fotos/icons8-fiesta.gif" alt="Ubicación" class="icono-mapa">
-  </div>    
-    <h3 class="titulo">Dress Code</h3>
-    <p class="subtitulo">Vestimenta</p>
-    <button onclick="abrirDialogo('agendaDress')">Ver</button>
-  </div>
-<div class="frases">
-        <h4>"No estamos envejeciendo, solo nos hacemos más "vintages"</h4> 
+    <section class="evento">  
+    
+    <div class="frases">        
+        <h4>"La vida empieza cada día, y hoy empieza con una fiesta."</h4>
     </div>
 
 <!--Bloque de Fiesta -->  
@@ -70,7 +62,7 @@
   </div>
 
   <div class="frases">
-        <h4>"Los 50 son 20 + 30 años de experiencia!!!"</h4> 
+        <h4>"Los 50 son los nuevos 30"</h4> 
     </div>
 
   <!--Bloque de Lugar -->  
@@ -110,6 +102,25 @@
     <p class="subtitulo">Toda la info</p>
     <button onclick="abrirDialogo('tarjeta')">Ver</button>
   </div>
+
+  <div class="frases">
+        <h4>"Los 50 son 20 + 30 años de experiencia!!!"</h4> 
+    </div>
+
+  <!--Bloque de Dress -->  
+   <div class="evento-box">
+    <div class="icon agendar" id="iconAgendar">
+    <img src="fotos/moño.gif" alt="Ubicación" class="icono-mapa">
+  </div>    
+    <h3 class="titulo">Dress Code</h3>
+    <p class="subtitulo">Vestimenta</p>
+    <button onclick="abrirDialogo('agendaDress')">Ver</button>
+  </div>
+
+<!-- Frases -->
+    <div class="frases">        
+        <h4>"No estamos envejeciendo, solo nos hacemos más vintages"</h4>
+    </div>
 
 <!-- Dialogo Mapa -->
 <dialog id="mapaDialog">
@@ -230,13 +241,7 @@
               width="18px"
             /> a Mariano</a></p>
   <button onclick="cerrarDialogo('tarjeta')">Cerrar</button>
-</dialog>
-
-
-    <!-- Frases -->
-    <div class="frases">        
-        <h4>"La vida empieza cada día, y hoy empieza con una fiesta."</h4>
-    </div>
+</dialog>   
 
     <!-- Formulario -->
      <form action="https://formspree.io/f/xgvzbvqy" method="POST">   
