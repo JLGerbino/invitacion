@@ -3,7 +3,7 @@
 ===================== */
 body {
   font-family: "Ubuntu Mono", monospace;/*'Open Sans', sans-serif;*/
-  background-color: #ee4848 ;   /* Fondo blanco */
+  background-color:#82dbd5;/*#ee4848*/ ;   /* Fondo blanco */
   color: white;  /*#0c0c0c;*/           /* negro */
   margin: 0;
   padding: 0;
@@ -11,12 +11,12 @@ body {
 }
 h2, h3, p{
   font-family: "Caveat", cursive;/*'Great Vibes', cursive;*/
-  color: #ee4848;/*white;*/
+  color:#82dbd5;/*#ee4848;*//*white;*/
 }
 
 .textoDialogo{
   font-family: "Ubuntu Mono", monospace;
-  color: #ee4848;/*white;*/
+  color:#82dbd5;/*#ee4848;*//*white;*/
 }
 
 h1, h4, h5, h6 {
@@ -27,7 +27,7 @@ h1, h4, h5, h6 {
 .whats{
   font-family: "Ubuntu Mono", monospace;
   text-decoration: none;
-  color: #ee4848; /*white;*/  
+  color:#82dbd5; /*#ee4848;*/ /*white;*/  
 }
 
 .btn-agendar{
@@ -55,7 +55,7 @@ h1, h4, h5, h6 {
 
 button {
   font-family: "Ubuntu Mono", monospace;
-  background: #ee4848;
+  background:#82dbd5;/*#ee4848;*/
   color: white;
   border: none;
   padding: 12px 20px;
@@ -66,7 +66,7 @@ button {
 }
 
 button:hover {
-  background: #ee4848;
+  background:#82dbd5; /*#ee4848;*/
   transform: scale(1.05);
 }
 
@@ -146,7 +146,7 @@ header img {
 .time-box span {
   display: block;
   font-size: 2.5em;/*2em*/
-  color: #ee4848;
+  color: #82dbd5;/*#ee4848;*/
   transition: transform 0.5s;
 }
 
@@ -267,14 +267,14 @@ form {
 form h3 {
   text-align: center;
   margin-bottom: 20px;
-  color: #ee4848/*#fffffe;*/ /* dorado */
+  color:#82dbd5;/*#ee4848*//*#fffffe;*/ /* dorado */
 }
 
 form label {
   display: block;
   margin: 12px 0 6px;
   font-weight: bold;
-  color: #ee4848;/*#fdfdfc;*/
+  color:#82dbd5;/*#ee4848;*//*#fdfdfc;*/
 }
 
 form input,
@@ -285,7 +285,7 @@ form textarea {
   border-radius: 8px;
   font-size: 1em;
   box-sizing: border-box;
-  background: #ee4848;/*#000;*/ /* mantiene el negro */
+  background:#82dbd5;/*#ee4848;*//*#000;*/ /* mantiene el negro */
   color: #f7f6f6;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
