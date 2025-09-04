@@ -84,6 +84,14 @@ header img {
   display: block;
   border-bottom: 3px solid white;
 }
+/* agregue esto para las bolas disco */
+.faltan-contenedor {
+  display: flex;
+  justify-content: center; /* centra en horizontal */
+  align-items: center;     /* centra en vertical */
+  gap: 15px;               /* espacio entre gifs y texto */
+  margin: 20px 0;
+}
 
 
 /* header img {
