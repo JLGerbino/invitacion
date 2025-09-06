@@ -50,7 +50,7 @@ const countdown = setInterval(() => {
 
     if (distance < 0) {
         clearInterval(countdown);
-        document.getElementById("timer").innerHTML = "🎉 ¡A disfrutar la fiesta! 🎂";
+        document.getElementById("timer").innerHTML = '<h1 class="mensaje-fiesta">A disfrutar la fiesta!</h1>';
         return;
     }
 
