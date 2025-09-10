@@ -48,7 +48,7 @@ h1, h4, h5, h6 {
 .frases{
   font-family: "Caveat", cursive;
   color:white;
-  font-size: 25px;
+  font-size: 40px; /*  25px */
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -109,6 +109,11 @@ header img {
   align-items: center;     /* centra en vertical */
   gap: 15px;               /* espacio entre gifs y texto */
   margin: 20px 0;
+}
+
+.comillas{
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 
