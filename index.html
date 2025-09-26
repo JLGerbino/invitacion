@@ -199,12 +199,7 @@
            <a href="https://jlgerbino.github.io/invitacion/fiesta50.ics" download class="agenda-btn">
              <img src="fotos/apple.png" alt="Apple Calendar" width="24">
             Apple Calendar
-          </a>
-
-          <!-- <a href="Fiesta50.ics" download class="agenda-btn">
-            <img src="fotos/apple.png" alt="Apple Calendar" width="24">
-            Apple Calendar
-          </a> -->
+          </a>          
           <!-- Outlook -->
           <a href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Fiesta+50+a%C3%B1os+Diego+y+Mariano&body=%C2%A1No+faltes+a+la+fiesta!&startdt=2025-11-23T21:00:00&enddt=2025-11-24T03:00:00&location=Pje+Sgto+Cabral+480"
             target="_blank" class="agenda-btn">
@@ -274,7 +269,26 @@
       </dialog>
 
       <!-- Formulario -->
-      <form action="https://formspree.io/f/xgvzbvqy" method="POST">
+       <form id="miFormulario" action="https://formspree.io/f/xgvzbvqy" method="POST">
+  <h3>Consultas y canciones para la fiesta</h3>
+  
+  <label for="nombre">Tu nombre:</label>
+  <input type="text" id="nombre" name="nombre" required>
+
+  <label for="consulta">Consulta:</label>
+  <textarea id="consulta" name="consulta" rows="3"></textarea>
+
+  <label for="cancion">Canción que te gustaría escuchar:</label>
+  <input type="text" id="cancion" name="cancion">
+
+  <button type="submit">Enviar</button>
+</form>
+
+<p id="mensaje" style="color:white; display:none; margin-top:10px;">
+  ¡Gracias! Tu mensaje fue enviado.
+</p>
+
+      <!-- <form action="https://formspree.io/f/xgvzbvqy" method="POST">
         <h3>Consultas y canciones para la fiesta</h3>
         <label for="nombre">Tu nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
@@ -286,7 +300,7 @@
         <input type="text" id="cancion" name="cancion">
 
         <button type="submit">Enviar</button>
-      </form>
+      </form> -->
 
       <script src="script.js"></script>
 

@@ -99,5 +99,29 @@ lottie.loadAnimation({
   autoplay: true,  
   /*path: 'https://lottie.host/89324d9e-3eaf-4a38-b244-19cda3c6a391/2zjsRjvUwl.json'*/
 });
+//Manejo del formulario
+const form = document.getElementById("miFormulario");
+const mensaje = document.getElementById("mensaje");
 
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const datos = new FormData(form);
+
+  const respuesta = await fetch(form.action, {
+    method: form.method,
+    body: datos,
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if (respuesta.ok) {
+    form.reset(); 
+    mensaje.style.display = "block"; 
+    setTimeout(() => {
+      mensaje.style.display = "none";
+    }, 3000);
+  } else {
+    alert("Hubo un error al enviar. Intenta de nuevo.");
+  }
+});
 
