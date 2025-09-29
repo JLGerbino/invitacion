@@ -1,16 +1,36 @@
 
 // Carrusel
-let index = 0;
+/* let index = 0;
 const images = document.querySelectorAll('.carousel img');
 
 setInterval(() => {
     images[index].classList.remove('active');
     index = (index + 1) % images.length;
     images[index].classList.add('active');
-}, 3000);
+}, 3000); */
 
 // Control de música
-const music = document.getElementById("bgMusic");
+const musicToggle = document.getElementById("musicToggle");
+const iconPlay = document.getElementById("iconPlay");
+const iconPause = document.getElementById("iconPause");
+const bgMusic = document.getElementById("bgMusic");
+
+let isPlaying = false;
+
+musicToggle.addEventListener("click", () => {
+  if (!isPlaying) {
+    bgMusic.play();
+    iconPlay.style.display = "none";
+    iconPause.style.display = "inline";
+  } else {
+    bgMusic.pause();
+    iconPlay.style.display = "inline";
+    iconPause.style.display = "none";
+  }
+  isPlaying = !isPlaying;
+});
+
+/* const music = document.getElementById("bgMusic");
 const musicBtn = document.getElementById("musicToggle");
 let playing = false;
 
@@ -25,7 +45,7 @@ musicBtn.addEventListener("click", () => {
         musicBtn.classList.add("playing"); // agrega animación
     }
     playing = !playing;
-});
+}); */
 
 
 // Función para actualizar con efecto flip
