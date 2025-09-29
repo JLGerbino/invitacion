@@ -2,23 +2,23 @@
    Estilo Global
 ===================== */
 body {
-  font-family: "Ubuntu Mono", monospace;/*'Open Sans', sans-serif;*/
-  background-color:skyblue;/*#82dbd5;*//*#ee4848*/ ;   /* Fondo blanco */
-  color: white;  /*#0c0c0c;*/           /* negro */
+  font-family: "Ubuntu Mono", monospace;
+  background-color:skyblue;
+  color: white;  
   margin: 0;
   padding: 0;
   text-align: center;
 }
 h2, h3, p{
-  font-family: "Caveat", cursive;/*'Great Vibes', cursive;*/
-  color:skyblue;/*#ee4848;*//*white;*/
+  font-family: "Caveat", cursive;
+  color:skyblue;
 }
 .abajo{
   background-color: white;
 }
 .textoDialogo{
   font-family: "Ubuntu Mono", monospace;
-  color:skyblue;/*#ee4848;*//*white;*/
+  color:skyblue;
 }
 
 h1, h4, h5, h6 {
@@ -29,7 +29,7 @@ h1, h4, h5, h6 {
 .whats{
   font-family: "Ubuntu Mono", monospace;
   text-decoration: none;
-  color:skyblue; /*#ee4848;*/ /*white;*/  
+  color:skyblue;  
 }
 
 .btn-agendar{
@@ -75,7 +75,7 @@ h1, h4, h5, h6 {
 
 button {
   font-family: "Ubuntu Mono", monospace;
-  background:skyblue;/*#b8eeea;*//*#ee4848;*/
+  background:skyblue;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -132,31 +132,9 @@ header img {
 /*Carrusel*/
 .carousel-item img {
   height: 300px;        
-  object-fit: cover;    /* recorta la imagen sin deformarla */
+  object-fit: cover; /* recorta la imagen sin deformarla */
   width: 100%;          
 }
-
-/* .carousel {
-  position: relative;
-  max-width: 100%;
-  height: 400px;
-  overflow: hidden;
-} */
-
-/* .carousel img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.carousel img.active {
-  opacity: 1;
-} */
 
 /* =====================
    Cuenta regresiva
@@ -296,7 +274,7 @@ dialog::backdrop {
 form {
   max-width: 500px;
   margin: 40px auto;
-  background: white;/* #111;*/ /* igual que los boxes del evento */
+  background: white;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
@@ -379,7 +357,7 @@ form button {
   /* Cuenta regresiva más compacta */
   #timer {
     gap: 10px;
-    flex-wrap: wrap;   /* 🔥 si no entra, pasa a dos filas */
+    flex-wrap: wrap;   /*si no entra, pasa a dos filas */
   }
 
   .time-box {
